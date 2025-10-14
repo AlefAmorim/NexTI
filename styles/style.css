@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root{
     --color1:#FEFEFD;
@@ -13,10 +14,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    font-family: "Montserrat",sans-serif;
 }
 
-body,html{
+h1,h2{
+    font-family: "Roboto",sans-serif;
+}
+
+
+html{
     scroll-behavior: smooth;
 }
 
@@ -56,7 +63,6 @@ header{
     grid-column: 1/2;
 }
 
-
 nav{
     grid-column: 2/3;
 }
@@ -85,9 +91,9 @@ nav{
 
 #Inicio{
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
     border-radius: 0px 0px 0px 90px;
-    text-align: center;
+    /* text-align: center; */
     display: flex;
     align-items: center;
 }
@@ -104,8 +110,20 @@ nav{
 
 #image-graphic{
     width: 80%;
-    filter: drop-shadow(1px 0px 2px var(--color5));
-    /* z-index: -1; */
+    /* filter: drop-shadow(1px 0px 2px var(--color5)); */
+}
+#redirect-form-anchor{
+    width: 150px;
+    height: 39px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    background: linear-gradient(90deg, var(--color6),var(--color5));
+}
+
+#redirect-form-anchor a{
+    color: var(--color2);
+    font-weight: 600;
 }
 
 /* Seção Sobre Nós 
@@ -113,12 +131,14 @@ nav{
 #Sobre-nós {
     text-align: center;
     background-color: var(--color6);
-    background-image: url("../resources/images/pattern-network.png"); 
+    /* background-image: url("../resources/images/pattern-network.png");  
+    background: linear-gradient(/* 90deg,  var(--color5),var(--color6));
     color: var(--color2);
     padding: 3px;
-    height: 100vh;
+    /* height: 100vh;
     border-radius: 70px 0px 70px 0px;
-    align-content: space-around;
+    display: flex;
+    /* align-items: center;
 }
 
 /* Seção Serviços 
@@ -134,7 +154,7 @@ nav{
     text-align: center;
     padding:20px;
     margin: 10px;
-    background: var(--color6) url("../resources/images/pattern-network.png") center center;
+    background: /* var(--color6)  url("../resources/images/pattern-network.png") center center,linear-gradient(90deg, var(--color6),var(--color5));
     background-size: cover;
     border-radius: 15px;
     transition: scale 800ms ease-out;
@@ -264,7 +284,8 @@ input[type="checkbox"]:checked{
 input[type="submit"]{
     width: 150px;
     height: 38px;
-    background-color: var(--color5);
+    /* background-color: var(--color5);
+    background: linear-gradient(90deg, var(--color6),var(--color5));
     color: var(--color2);
     font-weight: 600;
     border: none;
@@ -277,10 +298,15 @@ input[type="submit"]{
 }
 
 input[type="submit"]:hover{
-    background-color: var(--color4);
+    /* background-color: var(--color4);
+    background: linear-gradient(90deg, #183e70,#3297cf);
     transition: background-color 800ms ease-in ;
 }
 
+#policy-privacity-form-anchor:hover{
+    color:var(--color6);
+    text-decoration: underline;
+}
 
 /* Footer 
 
