@@ -42,46 +42,39 @@ header{
     box-shadow: 0px 1px 4px #64B7E32E;
 }
 
+
 /* Header */
 
 #container-items-header{
-    width: 100%;
     height: 100%;
     display: grid;
     grid-template-columns: 10% 90%;
     align-content: center;
-    
-}
-#container-logo-header{
-    grid-column: 1/2;
 }
 
-#logo-NexTI-header{
-    width: 100%;
-    height: 100%;
+#container-logo-header{
+    grid-column: 1/2;
 }
 
 
 nav{
     grid-column: 2/3;
 }
+
 #items-navBar{
     height: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    gap: 10px;
     padding: 3px;
 }
 
-#items-navBar li > a{
-    display: inline-block;
-    height: 100%;
+#anchors-navbar{
     color: var(--color5);
 }
 
 
-#items-navBar li > a:hover{
+#anchors-navbar:hover{
     color:var(--color6);
     border-width: 0px 0px 2px 0px;
     border-style: solid;
@@ -112,10 +105,10 @@ nav{
 #image-graphic{
     width: 80%;
     filter: drop-shadow(1px 0px 2px var(--color5));
-    z-index: -1;
+    /* z-index: -1; */
 }
 
-/* Seção Sobre Nós */
+/* Seção Sobre Nós 
 
 #Sobre-nós {
     text-align: center;
@@ -128,7 +121,7 @@ nav{
     align-content: space-around;
 }
 
-/* Seção Serviços */
+/* Seção Serviços 
 
 #Serviços h1{
     font-size: 1.4rem;
@@ -171,7 +164,7 @@ nav{
 }
 
 
-/* Seção Diferênciais */
+/* Seção Diferênciais 
 
 #Diferenciais{
     text-align: center;
@@ -201,7 +194,7 @@ nav{
     padding: 5px;
 }
 
-/* Seção Contato */
+/* Seção Contato 
 
 #container-content-introduction{
     text-align: center;
@@ -289,7 +282,7 @@ input[type="submit"]:hover{
 }
 
 
-/* Footer */
+/* Footer 
 
 footer{
     background-color: #13345E;
@@ -337,4 +330,4 @@ footer ul > li{
 
 #copyright{
     font-size: 0.8rem;
-}
+}*/
