@@ -16,6 +16,7 @@
     box-sizing: border-box;
     /* font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
     font-family: "Montserrat",sans-serif;
+    text-wrap: balance;
 }
 
 h1,h2{
@@ -37,6 +38,10 @@ a{
 
 img{
     width: 100%;
+}
+
+p{
+    font-size: 1.1rem;
 }
 
 footer,main,header{
@@ -109,8 +114,8 @@ section{
     filter: drop-shadow(1px 0px 2px var(--color5));
 } */
 
-#main-content-section-start h2 + p{
-    margin: 15px;
+#main-content-section-start h2,#main-content-section-start p{
+    margin: 10px 0px;
 }
 
 #redirect-form-anchor{
@@ -160,7 +165,7 @@ section{
 
 #container-contents-aboutus h1{
     margin: 5px;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
 }
 
 #container-contents-aboutus p{
@@ -239,6 +244,7 @@ section{
     width: 25%;
 }
 
+
 #container-main-contents h2{
     font-size: 1.2rem;
 }
@@ -250,7 +256,11 @@ section{
 
 #container-main-contents ul li{
     padding: 5px;
-    margin: 10px;
+    margin: 15px 10px;
+}
+
+.titles-topics-differentials h3{
+    margin: 13px 0px;
 }
 
 /* Seção Contato */
@@ -304,7 +314,7 @@ input[type="text"],input[type="tel"],input[type="email"],select{
 
 }
 
-input[type="text"]:focus,input[type="tel"]:focus,input[type="email"]:focus{
+input[type="text"]:focus,input[type="tel"]:focus,input[type="email"]:focus,#area-problem-description:focus{
     outline: 2px solid var(--color5);
 }
 
@@ -353,6 +363,9 @@ input[type="submit"]:hover, #redirect-form-anchor:hover{
     height: 150px;
     resize: none;
     overflow-y: scroll;
+    border-radius: 8px;
+    padding: 5px;
+    border: 1px solid var(--color7);
 }
 
 #policy-privacity-form-anchor:hover{
@@ -380,7 +393,7 @@ footer h1{
 
 footer ul > li{
     font-size: 0.9rem;
-    margin: 5px;
+    margin: 13px;
 }
 
 #container-logo-footer{
@@ -408,6 +421,6 @@ footer ul > li{
     margin: 4px;
 }
 
-#copyright{
+#copyright p{
     font-size: 0.8rem;
 }

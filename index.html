@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="resources/favicons/favicons-black/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/dark-theme-styles.css">
+    <link rel="stylesheet" href="styles/media-queries-styles.css">
 </head>
 <body>
     <header>
@@ -39,7 +40,7 @@
         <section id="section-start">
             <div class="container-contents" id="contents-section-start">
                 <h1 id="title-section-start">A solução completa em TI que leva o seu negócio ao próximo nível</h1>
-                <div class="container-images" >
+                <div class="container-images" id="container-image-improvement">
                     <img src="resources/images/imagem-melhoria.png" alt="Imagem homem e mulher ao ldo de um gráfico,com a mulher segurando uma seta que está subindo indicando melhoria" id="image-improvement">
                 </div>
                 <div id="main-content-section-start">
@@ -123,39 +124,53 @@
                     <h2>Quatro pilares do nosso diferencial:</h2>
                     <ul id="topics-differentials"">
                         <li>
-                            <div class="container-icons container-icons-section-differentials">
-                                <img src="resources/icons/icons-blue/icon-puzzle-blue.svg" alt="Imagem de uma quebra cabeça montado com uma peça solta">
+                            <div class="titles-topics-differentials">
+                                <div class="container-icons container-icons-section-differentials">
+                                    <img src="resources/icons/icons-blue/icon-puzzle-blue.svg" alt="Imagem de uma quebra cabeça montado com uma peça solta">
+                                </div>
+                                <h3>Soluções sob medida:</h3>
                             </div>
-                            <strong>Soluções sob medida:</strong> Análise detalhada para entregaar a tecnologia exata que você precisa, maximizando o ROI.
+                            <p>Análise detalhada para entregaar a tecnologia exata que você precisa, maximizando o ROI.</p>
                         </li>
                         <li>
-                            <div class="container-icons container-icons-section-differentials">
-                                <img src="resources/icons/icons-blue/icon-integration-blue.svg" alt="Icone engrenagem com um simbolo de certo dentro e ao redor duas setas formando um circulo">
+                            <div class="titles-topics-differentials">
+                                <div class="container-icons container-icons-section-differentials">
+                                    <img src="resources/icons/icons-blue/icon-integration-blue.svg" alt="Icone engrenagem com um simbolo de certo dentro e ao redor duas setas formando um circulo">
+                                </div>
+                                <h3>Plataforma unificada e Integrada:</h3>
                             </div>
-                            <strong>Plataforma unificada e Integrada:</strong> Gerenciamento centralizado de hardware e software para um ecossistema tecnológico coeso e sem falhas.
+                            <p>Gerenciamento centralizado de hardware e software para um ecossistema tecnológico coeso e sem falhas.</p>
                         </li>
                         <li>
-                            <div class="container-icons container-icons-section-differentials">
-                                <img src="resources/icons/icons-blue/icon-24-hours-support-blue.svg" alt="Icone funcionario de suporte 24 horas de cor azul">
-                            </div>
-                            <strong>Suporte 24h híbrido:</strong> Atendimento a qualquer hora, combinando a rapidez da AI com o conhecimento técnico dos nossos especialistas.
+                            <div class="titles-topics-differentials">
+                                <div class="container-icons container-icons-section-differentials">
+                                    <img src="resources/icons/icons-blue/icon-24-hours-support-blue.svg" alt="Icone funcionario de suporte 24 horas de cor azul">
+                                </div>
+                                <h3>Suporte 24h híbrido:</h3>
+                            </div> 
+                            <p>Atendimento a qualquer hora, combinando a rapidez da AI com o conhecimento técnico dos nossos especialistas.</p>
                         </li>
                         <li>
-                            <div class="container-icons container-icons-section-differentials">
-                                <img src="resources/icons/icons-blue/icon-tag-blue.svg" alt="Icone selo com cifrão indicando bom preço">
+                            <div class="titles-topics-differentials">
+                                <div class="container-icons container-icons-section-differentials">
+                                    <img src="resources/icons/icons-blue/icon-tag-blue.svg" alt="Icone selo com cifrão indicando bom preço">
+                                </div>
+                                <h3>Transparência e preço acessível:</h3>
                             </div>
-                            <strong>Transparência e preço acessível:</strong> Tecnologia de ponta com um excelente custo-benefício, ideal para empresas e usuários que buscam <strong>desempenho</strong> e <strong>economia</strong>
+                            <p>
+                                Tecnologia de ponta com um excelente custo-benefício, ideal para empresas e usuários que buscam <strong>desempenho</strong> e <strong>economia</strong>
+                            </p>
                         </li>
                     </ul>
                 </div>
             </div>
         </section>
         <section id="section-contact">
-            <div class="container-contents">
+            <div class="container-contents" id="contents-section-contact">
                 <div id="container-content-introduction">
                         <h1>Seu crescimento é a nossa prioridade</h1>
                         <p>Nosso foco é seu crescimento. Somos guiados pela inovação contínua e pelo compromisso de oferecer soluções de TI que realmente funcionam.</p>
-                        <p>Valoizamos a equipe e investimos em nossos especialistas, garantindo o melhor suporte técnico do mercado. Não vendemos apenas a tecnologia,entregamos <strong>confiança</strong>,<strong>eficiência</strong>, e uma parceria <strong>sólida</strong>, buscando ser a referência em inovação e confiabilidade no Brasil.</p>
+                        <p>Valorizamos a equipe e investimos em nossos especialistas, garantindo o melhor suporte técnico do mercado. Não vendemos apenas a tecnologia,entregamos <strong>confiança</strong>,<strong>eficiência</strong>, e uma parceria <strong>sólida</strong>, buscando ser a referência em inovação e confiabilidade no Brasil.</p>
                     </div>
                 <div id="container-form">
                     <form action="###">
@@ -194,9 +209,9 @@
         </div>
         <div id="fale-conosco">
             <h1>Fale Conosco</h1>
-            <ul>
+            <ul id="items-contact-footer">
                 <li><strong>E-mails:</strong>
-                    <ul>
+                    <ul >
                         <li><strong>Geral:</strong>
                             <a href="mailto:contato@nexti.com.br" class="links-footer">
                                 contato@nexti.com.br
@@ -224,19 +239,19 @@
             <h1>Navegação</h1>
             <ul id="items-navigation-footer">
                 <li>
-                    <a href="#Inicio" class="links-footer">Inicio</a>
+                    <a href="#section-start" class="links-footer">Inicio</a>
                 </li>
                 <li>
-                    <a href="#Sobre-nós" class="links-footer">Sobre a NexTI</a>
+                    <a href="#section-aboutus" class="links-footer">Sobre a NexTI</a>
                 </li>
                 <li>
-                    <a href="#Serviços" class="links-footer">Serviços</a>
+                    <a href="#section-services" class="links-footer">Serviços</a>
                 </li>
                 <li>
-                    <a href="#Diferenciais" class="links-footer">Porque Escolher a NexTI</a>
+                    <a href="#section-differentials" class="links-footer">Porque Escolher a NexTI</a>
                 </li>
                 <li>
-                    <a href="#Contato" class="links-footer">Contate a NexTI</a>
+                    <a href="#section-contact" class="links-footer">Contate a NexTI</a>
                 </li>
                 <li>
                     <a href="##" class="links-footer">Politica de Privacidade</a>

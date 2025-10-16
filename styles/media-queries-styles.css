@@ -1,0 +1,156 @@
+@media screen and (min-width: 600px /*700px*/) {
+    #container-image-network{
+        transform: translateY(-35px);
+    }
+    img{
+        width: 70%;
+    }
+
+    #section-services h1 {
+        font-size: 1.8rem;
+    }
+
+    #container-cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cards{
+        width: 74%;
+    }
+
+    #topics-differentials{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    h1{
+        font-size: 1.8rem;
+    }
+    h2{
+        font-size: 1.6rem;
+    }
+    p{
+        font-size: 1.4rem;
+    }
+
+    img{
+        width:100%;
+    }
+
+    #container-logo-header{
+        padding: 18px;
+    }
+
+    #container-logo-header img{
+        width: 70%;
+    }
+
+    #contents-section-start{
+        display: grid;
+        grid-template-columns: 46% auto;
+    }
+
+    #title-section-start{
+        grid-column: 1/3;
+        grid-row: 1/2; 
+    }
+
+    #contents-section-aboutus{
+        display:flex;
+        height: 100vh;
+        grid-template-columns: 60% 40%;
+    }
+
+    #container-image-improvement{
+        grid-column: 2/3;
+        grid-row:2/3 ;
+    }
+
+    #main-content-section-start{
+        grid-column: 1/2;
+        grid-row:2/3 ;
+        text-align: left;
+    }
+
+    #main-content-section-start h2,#main-content-section-start p{
+        margin: 5px 15px 15px 15px;
+    }
+
+    #container-cards{
+            flex-direction: unset;
+    }
+
+    .cards{
+        height: 320px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    
+    #section-aboutus{
+        height: 100%;
+    }
+    #contents-section-aboutus{
+        text-align: right;
+        flex-direction: row;
+    }
+    #container-image-network{
+        transform: translateY(0);
+    }
+
+
+    #topics-differentials{
+        display: flex;
+    }
+
+    #container-main-contents ul li {
+    padding: 5px;
+    margin: 15px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+
+    #contents-section-contact{
+        flex-direction: unset;
+        justify-content: center;
+    }
+
+    #container-content-introduction{
+        width: 700px;
+        text-align: left;
+    }
+
+    footer{
+        flex-direction: unset;
+        justify-content: center;
+        text-align: left;
+        gap: 20px;
+    }
+
+
+    #container-logo-footer{
+        width: unset;
+    }
+
+    #container-logo-footer img{
+        width: 200px;
+    }
+
+    footer ul li{
+        margin: 13px;
+    }
+
+    #copyright{
+        width: 400px;
+    }
+    
+    #copyright p{
+        font-size: 1.1rem;
+    }
+}
