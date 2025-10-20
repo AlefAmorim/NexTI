@@ -129,23 +129,28 @@ section{
     justify-content: center;
 }
 
+.container-contents#contents-start{
+    /* margin: 5px 0px; */
+    gap: 5px;
+}
+
 #title-section-start{
     font-size: 1.5rem;
 }
 
 #container-logo-nexTI-start{
-    height: 100px;
+    height: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 #container-logo-nexTI-start img{
-    width: 60%;
+    width: 50%;
 }
 
-#contents-aboutus p{
-    font-weight: 500;
+#contents-start p{
+    width: 80%;
 }
 
 /* #image-graphic{
@@ -420,12 +425,12 @@ section{
     font-size: 1.2rem;
 }
 
-#container-main-contents ul{
+/* #container-main-contents ul */#topics-differentials{
     padding: 10px;
     text-align: center;
 }
 
-#container-main-contents ul li{
+/* #container-main-contents ul */#topics-differentials li{
     padding: 5px;
     margin: 15px 10px;
     display: flex;
@@ -434,7 +439,8 @@ section{
     align-items:center ;
 }
 .container-icons-section-differentials {
-    width: 235px;
+    /* width: 235px; */
+    width: 80%;
     display: flex;
     justify-content: center;
 }

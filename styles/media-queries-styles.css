@@ -60,3 +60,24 @@
         width: 300px;
     }
 }
+
+@media screen and (min-width:600px) {
+    #container-logo-nexTI-start img {
+        width: 40%;
+    }
+}
+
+
+@media screen and (min-width:670px) {
+    #topics-differentials {
+        display: grid;
+        grid-template-areas: "first-topic second-topic" "third-topic fourth-topic";
+    }
+    /* .container-icons-section-differentials {
+        width: 80%;
+    } */
+
+    #container-main-contents h2 {
+        font-size: 1.4rem;
+    }
+}
