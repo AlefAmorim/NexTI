@@ -46,10 +46,13 @@ p{
 }
 
 footer,main,header{
-    width: 100vw;
+    /* width: 100vw; */
 }
 
 header{
+    position: fixed;
+    z-index: 1;
+    backdrop-filter: blur(5px);
     padding: 4px;
     height: 70px;
     box-shadow: 0px 1px 4px #64B7E32E;
@@ -62,6 +65,26 @@ section{
 #highlighted-text{
     color: var(--color5);
 }
+
+.section-info{
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color5);
+    display: flex;
+    align-self: center;
+    gap: 3px;
+}
+
+
+.section-info::before,.section-info::after{
+    content: " ";
+    width: 50px;
+    height: 2px;
+    display: inline-block;
+    align-self: center;
+    background-color: var(--color5);
+}
+
 /* Header */
 
 #container-items-header{
@@ -104,6 +127,7 @@ section{
 
 #section-start{
     background: url(../resources/images/image-server-room.jpg)  center center no-repeat;
+    color: var(--color2);
     background-size: cover;
     background-attachment: fixed;
     backdrop-filter: opacity(10%);
@@ -185,7 +209,7 @@ section{
     /* background: linear-gradient(0deg, var(--color5) 100%,transparent 0%); */
     background-position: 0px 0px;
     background-repeat: no-repeat;
-    transition: all 1s ease-in;
+    transition: all .8s ease-in;
 }
 
 
@@ -240,16 +264,6 @@ section{
     height: 100%;
     padding: 25px;
 }
-
-#contents-section-services .section-info::before,#contents-section-services .section-info::after, #container-content-differentials .section-info::before,#container-content-differentials .section-info::after{
-    content: " ";
-    width: 50px;
-    height: 2px;
-    display: inline-block;
-    align-self: center;
-    background-color: var(--color5);
-}
-
 
 #section-services h1{
     font-size: 1.5rem;
@@ -417,7 +431,8 @@ section{
 
 .container-icons-section-differentials img{
     /* width: 25%; */
-    width: 100%;
+    /* width: 100%; */
+    width: 70%;
 }
 
 
@@ -488,13 +503,6 @@ section{
     align-items: unset;
 }
 
-.section-info{
-    font-size: 1rem;
-    font-weight: 600;
-    color: var(--color5);
-    display: flex;
-    gap: 3px;
-}
 
 #container-content-mission h1{
     font-size: 1.7rem;
@@ -542,19 +550,16 @@ section{
 
 /* Seção Contato */
 
-#contents-section-contact .section-info{
-    align-self: baseline;
-    margin: 0px 11px;
-}
 
-#contents-section-contact .section-info::after, #container-content-mission .section-info::after{
+
+/* #contents-section-contact .section-info::after, #container-content-mission .section-info::after{
     content: " ";
     width: 50px;
     height: 2px;
     display: inline-block;
     align-self: center;
     background-color: var(--color5);
-}
+} */
 
 #container-content-introduction{
     text-align: left;
@@ -667,24 +672,26 @@ input[type="submit"]:hover/*, #redirect-form-anchor:hover */{
 /* Footer */
 
 footer{
+    height: 100vh;
     background-color: #13345E;
     color: #FAF9F6;
     display: flex;
     flex-direction: column;
-    align-items:center ;
-    padding: 10px;
+    justify-content: space-around;
+    /* align-items:center ; */
     margin: 25px 0px 0px 0px;
-    text-align: center;
+    padding: 17px 10px 10px 19px;
+    /* text-align: center; */
 }
 
 footer h1{
     font-size: 1.1rem;
-    margin: 10px;
+    margin: 6px 0px;
 }
 
 footer ul > li{
     font-size: 0.9rem;
-    margin: 13px;
+    margin: 15px 0px;
 }
 
 #container-logo-footer{
@@ -701,9 +708,10 @@ footer ul > li{
 }
 
 .links-footer:hover{
-    color: var(--color7);
+    color: var(--color3);
     border-width: 0px 0px 1px 0px;
-    border-color: var(--color7);
+    
+    border-color: var(--color3);
     border-style: solid;
 }
 
