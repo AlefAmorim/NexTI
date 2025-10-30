@@ -495,7 +495,13 @@ section{
     margin: 13px 0px;
 }
 
-/* Seção Missão, Visão e Valores */
+/* Seção Proósitos */
+
+
+#section-intention .section-info{
+    margin: 10px 0px;
+}
+
 #container-content-mission{
     text-align: left;
     padding: 15px;
