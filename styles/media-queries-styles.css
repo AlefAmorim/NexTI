@@ -81,3 +81,138 @@
         font-size: 1.4rem;
     }
 }
+
+
+@media screen and (min-width: 900px) {
+    header{
+        width:100%;
+    }
+
+    #container-logo-header img{
+        width: 50%;
+    }
+
+    #items-navBar{
+        /* justify-content: space-between; */
+    }
+
+    /* Seção Propósito */
+    #container-content-mission{
+        display: grid;
+        grid-template-areas: "sectionInfo sectionInfo" "image title" "image contents-section";
+        margin: 15px 0px;
+    }
+    
+    #container-content-mission .section-info{
+        grid-area:sectionInfo ;
+        justify-self: center;
+    }
+
+    #container-content-mission h1 {
+        align-content:center;
+        grid-area: title;
+    }
+
+    #container-content-mission #contents{
+        justify-content: center;
+        grid-area: contents-section;
+        border: none;
+    }
+
+    #container-content-mission #contents::before{
+        content: " ";
+        width: 4px;
+        height: 48%;
+        transform: translateX(-10px);
+        background-color: var(--color5);
+        position: absolute;
+    }   
+
+    #container-image-team{
+        grid-area: image;
+    }
+
+    /* Seção contato */
+
+    #contents-section-contact{
+        display: grid;
+        grid-template-areas: "sectionInfo sectionInfo" "contentsSection form";
+        /* grid-template-columns: 60% 30%; */
+        align-content: center;
+        justify-items: center;
+    }
+    
+    #contents-section-contact .section-info{
+        grid-area:sectionInfo;
+        align-self: center;
+    }
+    
+    #contents-section-contact #container-content-introduction{
+        grid-area:contentsSection;
+    }
+
+    #contents-section-contact #container-form {
+        grid-area: form;
+    }
+
+    #container-form form{
+        display: grid;
+        grid-template-areas:"titulo titulo" "nome email" "telefone uso" "areaTexto areaTexto" "politicasPrivacidade enviar" /* "enviar enviar" */;
+        gap: 5px;
+    }
+
+    #container-form form h2{
+        grid-area: titulo;
+    }
+
+    label{
+        transform: translateY(-30px);
+    }
+    
+    input{
+        margin: 25px 0px;
+    }
+
+    #name,label[for="name"]{
+        grid-area: nome;
+    }
+
+    #email,label[for="email"]{
+        grid-area: email;
+    }
+
+    #contato,label[for="contato"]{
+        grid-area: telefone;
+    }
+
+    #type-user,label[for="type-user"]{
+        grid-area:uso;
+    }
+
+    #area-problem-description,label[for="area-problem-description"]{
+        grid-area: areaTexto;
+    }
+
+    label[for="area-problem-description"]{
+        transform: translateY(-90px);
+    }
+
+    label[for="policy-privacity"]{
+        grid-area: politicasPrivacidade;
+        display: flex;
+        align-items: center;
+    }
+
+    #botao-enviar{
+        grid-area:enviar;
+    }
+
+
+
+    /* Footer */
+    footer{
+        flex-direction: row;
+        align-items: center;
+        height: 100%;
+    }
+}
