@@ -19,6 +19,10 @@
     text-wrap: balance;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 h1,h2{
     font-family: "Roboto",sans-serif;
 }
@@ -60,6 +64,10 @@ header{
 
 section{
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
 }
 
 #highlighted-text{
@@ -186,7 +194,7 @@ section{
 } */
 
 #redirect-form-anchor{
-    width: 150px;
+    width: 180px;
     height: 39px;
     border: none;
     margin: 8px;
@@ -209,7 +217,7 @@ section{
     /* background: linear-gradient(0deg, var(--color5) 100%,transparent 0%); */
     background-position: 0px 0px;
     background-repeat: no-repeat;
-    transition: all .8s ease-in;
+    transition: all .6s ease-in;
 }
 
 
@@ -292,7 +300,7 @@ section{
 
 .cards{
     /* width: 405px; */
-    width: 98%;
+    width: 60%/* 98% */;
     height: max-content;
     padding:15px;
     margin: 10px;
@@ -308,18 +316,27 @@ section{
 }
 
 #card-network-hardware{
-    animation: appear .9s .1s ease-in 1;
-
+    transform: translateX(-150%/* -200% */);
+    /* animation: appear .9s .1s ease-in 1; */
+    transition: transform ease-in .6s  ;
 }
 
 #card-software-configuration{
-    animation: appear .9s .2s ease-in 1;
-
+    transform: translateX(150%/* 200% */);
+    transition: transform ease-in .6s  ;
+    /* animation: appear .9s .2s ease-in 1; */
 }
 
 #card-support{
-    animation: appear .9s .3s ease-in 1;
+    transform: translateX(-150%/* -200% */);
+    transition: transform ease-in .6s  ;
+    /* animation: appear .9s .3s ease-in 1; */
+}
 
+#card-support.appear,#card-software-configuration.appear,#card-network-hardware.appear{
+    transform:translateX(0%);
+    /* animation: appear .9s .1s ease-in 1; */
+    transition: transform ease-in .6s  ;
 }
 
 /* .cards:hover{
@@ -405,7 +422,7 @@ section{
 #section-differentials{
     height: 100%;
     text-align: center;
-    border-radius: 10px 83px 10px 83px;
+    /* border-radius: 10px 83px 10px 83px; */
     padding: 10px;
 }
 
@@ -453,6 +470,7 @@ section{
     gap: 15px;
     align-items:center ;
 }
+
 .container-icons-section-differentials {
     /* width: 235px; */
     width: 80%;
@@ -464,24 +482,31 @@ section{
     transition: transform,opacity 1s ease;
 }
 
-#topics-differentials li:nth-child(1){
-    animation: appear .9s .1s ease-in 1;
+#topics-differentials li:nth-child(1),#topics-differentials li:nth-child(3){
+    transform: translateX(-130%/* -200% */);
+    /* animation: appear .9s .1s ease-in 1; */
     transition: transform,opacity 1s ease;
 }
 
-#topics-differentials li:nth-child(2){
-    animation: appear .9s .2s ease-in 1;
+#topics-differentials li:nth-child(2),#topics-differentials li:nth-child(4){
+    transform: translateX(130%/* 200% */);
+    /* animation: appear .9s .2s ease-in 1; */
     transition: transform,opacity 1s ease;
 }
 
-#topics-differentials li:nth-child(3){
-    animation: appear .9s .3s ease-in 1;
+/* #topics-differentials li:nth-child(3){
+    /* animation: appear .9s .3s ease-in 1; 
     transition: transform,opacity 1s ease;
-}
+} */
 
-#topics-differentials li:nth-child(4){
-    animation: appear .9s .4s ease-in 1;
+/* #topics-differentials li:nth-child(4){
+    /* animation: appear .9s .4s ease-in 1; 
     transition: transform,opacity 1s ease;
+} */
+
+#topics-differentials li.appear{
+    transform: translateX(0%);
+    transition: transform 1s ease;
 }
 
 .container-contents-topics h3 + p{
@@ -516,8 +541,8 @@ section{
 
 #container-image-team {
     width: 100%;
-    background: url("../resources/images/circuit-pattern.png") center center no-repeat;
-    background-size: cover;
+    /* background: url("../resources/images/circuit-pattern.png") center center no-repeat;
+    background-size: cover; */
     /* width: 430px; */
     padding: 10px;
 }
@@ -682,12 +707,13 @@ input[type="submit"]:hover/*, #redirect-form-anchor:hover */{
 /* Footer */
 
 footer{
-    height: 100vh;
+    /* height: 100vh; */
     background-color: #13345E;
     color: #FAF9F6;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    gap: 20px;
     /* align-items:center ; */
     margin: 25px 0px 0px 0px;
     padding: 17px 10px 10px 19px;

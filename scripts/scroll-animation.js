@@ -1,19 +1,29 @@
-let cards = document.querySelectorAll(".cards")
-cards.forEach(card =>{
-            // card.style.opacity = 0
-})
+function displayElements(elements,initalCoordinatesElement,initalCoordinatesSiblingElement,documentCoodinates){
+    if(documentCoodinates <= initalCoordinatesElement && documentCoodinates > initalCoordinatesSiblingElement){
+        elements.forEach(element => element.classList.add("appear"))
+    }
+    console.log(true)
+    if((documentCoodinates ===  initalCoordinatesElement) ){
+        elements.forEach(element => element.classList.add("appear"))
+    }
+}
 
-window.onscroll = (e) => {
-    cards.forEach(card =>{
-    if(window.scrollY === 550){
-            card.classList.add("animate")
-            // setTimeout(()=> {
-            //     card.classList.remove("animate")
-            //     // card.style.opacity = 100
-            // },2000)
-        }else{
-            card.classList.remove("animate")
-        }
-    })
-    console.log(document.querySelector("#section-services").getBoundingClientRect())
+const cards = document.querySelectorAll(".cards");
+const topics = document.querySelectorAll("#topics-differentials li");
+
+const sectionServices = document.querySelector("#section-services");
+const initalCoordinatesServices = Math.round(sectionServices.getClientRects()[0].y);
+const initalCoordinatesSiblingServices = sectionServices.nextElementSibling.getClientRects()[0].y;
+
+const sectionDifferentials = document.querySelector("#section-differentials");
+const initalCoordinatesDifferentials  = Math.round(sectionDifferentials.getClientRects()[0].y);
+const initalCoordinatesSiblingDifferentials = sectionDifferentials.nextElementSibling.getClientRects()[0].y;
+
+document.onscrollend = (e) => {
+    const docElement = document.documentElement;
+    const coordinatesDocument = docElement.getClientRects()[0].y;
+
+    displayElements(cards,initalCoordinatesServices,-initalCoordinatesSiblingServices,coordinatesDocument);
+
+    displayElements(topics,-initalCoordinatesDifferentials,-initalCoordinatesSiblingDifferentials,coordinatesDocument);
 }

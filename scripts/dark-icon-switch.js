@@ -10,8 +10,15 @@ function changeTheme(){
 
 
 
-window.onload = ()=>{
+window.onload = (e)=>{
+    const URL = new window.URL(document.URL)
+    if(URL.hash){
+        URL.hash = ""
+        // console.log(URL.hash)
+        // console.log(URL)
+        window.location.href = URL.href
+    }
     const isDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
-
+    console.log(isDarkMode)
     isDarkMode?changeTheme():false
 }

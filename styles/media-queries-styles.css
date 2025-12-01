@@ -96,21 +96,52 @@
         /* justify-content: space-between; */
     }
 
+    /* Seção Serviços */
+
+    #container-cards{
+        width: unset;
+        justify-content: center;
+        flex-direction: row;
+        /* flex-basis: 400px; */
+        flex-wrap: wrap;
+    }
+
+    .cards{
+        width: 400px;
+        height: 300px;
+    }
+
+    .container-content-cards{
+        height: 100%;
+        justify-content: space-around;
+    }
+
+    #card-network-hardware{
+        /* transform:translateX(350%); */
+        /* animation: appear .9s .1s ease-in 1; */
+        transition: transform ease-in 1s  ;
+    }
+    #card-software-configuration{
+        transform: translateX(300%);
+    }
+    #card-support{
+        transform: translateX(350%);
+    }
+
     /* Seção Propósito */
     #container-content-mission{
         display: grid;
-        grid-template-areas: "sectionInfo sectionInfo" "image title" "image contents-section";
+        grid-template-areas:  "image contents-section" "image contents-section";
         margin: 15px 0px;
+        grid-template-columns:50% 50%;
     }
     
     #container-content-mission .section-info{
-        grid-area:sectionInfo ;
         justify-self: center;
     }
 
     #container-content-mission h1 {
         align-content:center;
-        grid-area: title;
     }
 
     #container-content-mission #contents{
@@ -130,16 +161,26 @@
 
     #container-image-team{
         grid-area: image;
+        display: flex;
     }
 
     /* Seção contato */
 
+    #section-contact{
+        display: flex;
+        justify-content: center;
+    }
+
+
     #contents-section-contact{
+        width: 80%;
+        /* max-width: 95%; */
         display: grid;
         grid-template-areas: "sectionInfo sectionInfo" "contentsSection form";
-        /* grid-template-columns: 60% 30%; */
-        align-content: center;
-        justify-items: center;
+        grid-template-columns: 50% 50%;
+        /* align-content: center;
+        justify-content: center;
+        align-items: center; */
     }
     
     #contents-section-contact .section-info{
@@ -149,16 +190,32 @@
     
     #contents-section-contact #container-content-introduction{
         grid-area:contentsSection;
+        background-color: var(--color6);
+        color: var(--color1);
+        margin: 0px;
+        height: 100%;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 15px 0px 0px 15px;
     }
+
 
     #contents-section-contact #container-form {
         grid-area: form;
+        width: 100%;
     }
-
+    
     #container-form form{
         display: grid;
-        grid-template-areas:"titulo titulo" "nome email" "telefone uso" "areaTexto areaTexto" "politicasPrivacidade enviar" /* "enviar enviar" */;
+        grid-template-areas:"titulo titulo" "nome email" "telefone uso" "areaTexto areaTexto" "politicasPrivacidade politicasPrivacidade" "enviar enviar" ;
         gap: 5px;
+        margin: 0px;
+        border-radius: 0px 15px 15px 0px;
+        /* justify-content: center; */
+        align-items: center;
+        justify-items: center;
     }
 
     #container-form form h2{
@@ -201,6 +258,7 @@
         grid-area: politicasPrivacidade;
         display: flex;
         align-items: center;
+        gap: 5px;
     }
 
     #botao-enviar{
