@@ -19,7 +19,7 @@
     text-wrap: balance;
 }
 
-body{
+body,main{
     overflow-x: hidden;
 }
 
