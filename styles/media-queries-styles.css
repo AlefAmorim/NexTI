@@ -33,7 +33,17 @@
     #section-differentials ul li{
         margin-right: 5px;
         margin-left: 5px;
+        transform: translateX(0%);
+        transition: transform,opacity 1s ease;
     }
+
+
+    #topics-differentials li:nth-child(1),#topics-differentials li:nth-child(2),#topics-differentials li:nth-child(3),#topics-differentials li:nth-child(4){
+        transform: translateX(0%);
+        transition: transform,opacity 1s ease;
+    }
+
+
 
     #topics-differentials{
         margin: 15px 0px;
@@ -74,9 +84,6 @@
         display: grid;
         grid-template-areas: "first-topic second-topic" "third-topic fourth-topic";
     }
-    /* .container-icons-section-differentials {
-        width: 80%;
-    } */
 
     #container-main-contents h2 {
         font-size: 1.4rem;
@@ -93,17 +100,12 @@
         width: 50%;
     }
 
-    #items-navBar{
-        /* justify-content: space-between; */
-    }
-
     /* Seção Serviços */
 
     #container-cards{
         width: unset;
         justify-content: center;
         flex-direction: row;
-        /* flex-basis: 400px; */
         flex-wrap: wrap;
     }
 
@@ -118,8 +120,6 @@
     }
 
     #card-network-hardware{
-        /* transform:translateX(350%); */
-        /* animation: appear .9s .1s ease-in 1; */
         transition: transform ease-in 1s  ;
     }
     #card-software-configuration{
@@ -130,6 +130,7 @@
     }
 
     /* Seção Propósito */
+
     #container-content-mission{
         display: grid;
         grid-template-areas:  "image contents-section" "image contents-section";
@@ -175,13 +176,9 @@
 
     #contents-section-contact{
         width: 80%;
-        /* max-width: 95%; */
         display: grid;
         grid-template-areas: "sectionInfo sectionInfo" "contentsSection form";
         grid-template-columns: 50% 50%;
-        /* align-content: center;
-        justify-content: center;
-        align-items: center; */
     }
     
     #contents-section-contact .section-info{
@@ -265,8 +262,6 @@
     #botao-enviar{
         grid-area:enviar;
     }
-
-
 
     /* Footer */
     footer{

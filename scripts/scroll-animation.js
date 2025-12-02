@@ -23,12 +23,6 @@ document.onscrollend = (e) => {
     const docElement = document.documentElement;
     const coordinatesDocument = docElement.getClientRects()[0].y;
 
-    if(coordinatesDocument <= initalCoordinatesServices && coordinatesDocument > -initalCoordinatesSiblingServices){
-        displayElements(cards,initalCoordinatesServices,-initalCoordinatesSiblingServices,coordinatesDocument);
-
-    }else if(coordinatesDocument <= -initalCoordinatesDifferentials && coordinatesDocument > -initalCoordinatesSiblingDifferentials){
-        displayElements(topics,-initalCoordinatesDifferentials,-initalCoordinatesSiblingDifferentials,coordinatesDocument);
-    }
-
-
+    displayElements(topics,-initalCoordinatesDifferentials,-initalCoordinatesSiblingDifferentials,coordinatesDocument);
+    displayElements(cards,-initalCoordinatesServices,-initalCoordinatesSiblingServices,coordinatesDocument);
 }
