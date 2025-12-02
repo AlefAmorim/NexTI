@@ -316,7 +316,7 @@ section{
 }
 
 #card-network-hardware{
-    transform: translateX(-150%/* -200% */);
+    transform: translateX(-170%/* -200% */);
     /* animation: appear .9s .1s ease-in 1; */
     transition: transform ease-in .6s  ;
 }

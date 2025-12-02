@@ -1,5 +1,6 @@
-@media  screen and (320px <= width <= 449px) {
+@media  screen and (320px <= width <= 720px/*449px   min-width:320px */) {
     header{
+        /* width: 100%; */
         height: 59px;
     }
     #items-navBar{
