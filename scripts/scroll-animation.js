@@ -19,11 +19,16 @@ const sectionDifferentials = document.querySelector("#section-differentials");
 const initalCoordinatesDifferentials  = Math.round(sectionDifferentials.getClientRects()[0].y);
 const initalCoordinatesSiblingDifferentials = sectionDifferentials.nextElementSibling.getClientRects()[0].y;
 
-document.onscroll = (e) => {
+document.onscrollend = (e) => {
     const docElement = document.documentElement;
     const coordinatesDocument = docElement.getClientRects()[0].y;
 
-    displayElements(cards,initalCoordinatesServices,-initalCoordinatesSiblingServices,coordinatesDocument);
+    if(coordinatesDocument <= initalCoordinatesServices && coordinatesDocument > -initalCoordinatesSiblingServices){
+        displayElements(cards,initalCoordinatesServices,-initalCoordinatesSiblingServices,coordinatesDocument);
 
-    displayElements(topics,-initalCoordinatesDifferentials,-initalCoordinatesSiblingDifferentials,coordinatesDocument);
+    }else if(coordinatesDocument <= -initalCoordinatesDifferentials && coordinatesDocument > -initalCoordinatesSiblingDifferentials){
+        displayElements(topics,-initalCoordinatesDifferentials,-initalCoordinatesSiblingDifferentials,coordinatesDocument);
+    }
+
+
 }
