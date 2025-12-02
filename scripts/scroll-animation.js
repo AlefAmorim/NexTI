@@ -19,7 +19,7 @@ const sectionDifferentials = document.querySelector("#section-differentials");
 const initalCoordinatesDifferentials  = Math.round(sectionDifferentials.getClientRects()[0].y);
 const initalCoordinatesSiblingDifferentials = sectionDifferentials.nextElementSibling.getClientRects()[0].y;
 
-document.onscrollend = (e) => {
+document.onscroll = (e) => {
     const docElement = document.documentElement;
     const coordinatesDocument = docElement.getClientRects()[0].y;
 
