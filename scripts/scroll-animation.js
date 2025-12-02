@@ -26,7 +26,7 @@ document.onscrollend = (e) => {
     if(coordinatesDocument <= initalCoordinatesServices && coordinatesDocument > -initalCoordinatesSiblingServices){
         displayElements(cards,initalCoordinatesServices,-initalCoordinatesSiblingServices,coordinatesDocument);
 
-    }else if(coordinatesDocument <= -initalCoordinatesDifferentials && coordinatesDocument > -initalCoordinatesSiblingDifferentials){
+    }else if(coordinatesDocument <= -initalCoordinatesDifferentials ){
         displayElements(topics,-initalCoordinatesDifferentials,-initalCoordinatesSiblingDifferentials,coordinatesDocument);
     }
 
